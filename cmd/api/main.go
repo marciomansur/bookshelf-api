@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 
@@ -19,6 +20,7 @@ func main() {
 	model.Add(model.Book{ID: "2", Title: "The Docker Book", Description: "A book about Docker", Author: &model.Author{Name: "Thomas"}})
 	model.Add(model.Book{ID: "3", Title: "The Go Book", Description: "A book about Go", Author: &model.Author{Name: "George"}})
 
+	fmt.Println(model.Get())
 	router := router.NewRouter()
-	log.Print(http.ListenAndServe(":8080", setGlobalMiddleware(router)))
+	log.Fatal(http.ListenAndServe("localhost:3000", setGlobalMiddleware(router)))
 }

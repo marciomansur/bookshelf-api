@@ -6,7 +6,7 @@ import (
 
 func NewRouter() *mux.Router {
 	router := mux.NewRouter()
-	sub := router.PathPrefix("v1").Subrouter()
+	sub := router.PathPrefix("/v1").Subrouter()
 
 	for _, route := range routes {
 		sub.
