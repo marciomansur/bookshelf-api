@@ -1,0 +1,17 @@
+hash: 63541d370417344b0abd3d96a7f6635538c83eb25c79b62f0b7caf61c24a7d63
+updated: 2018-10-25T12:51:43.626927-03:00
+imports:
+- name: github.com/go-kit/kit
+  version: ca4112baa34cb55091301bdc13b1420a122b1b9e
+  subpackages:
+  - log
+  - log/level
+- name: github.com/gorilla/context
+  version: 51ce91d2eaddeca0ef29a71d766bb3634dadf729
+- name: github.com/gorilla/handlers
+  version: 7e0847f9db758cdebd26c149d0ae9d5d0b9c98ce
+- name: github.com/gorilla/mux
+  version: e3702bed27f0d39777b0b37b664b6280e8ef8fbf
+- name: github.com/rs/cors
+  version: 9a47f48565a795472d43519dd49aac781f3034fb
+testImports: []

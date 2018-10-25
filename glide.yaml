@@ -1,0 +1,13 @@
+package: github.com/marciomansur/bookshelf-api
+import:
+- package: github.com/gorilla/mux
+  version: ~1.6.2
+- package: github.com/rs/cors
+  version: ~1.6.0
+- package: github.com/go-kit/kit
+  version: ~0.7.0
+  subpackages:
+  - log
+  - log/level
+- package: github.com/gorilla/handlers
+  version: ~1.4.0
