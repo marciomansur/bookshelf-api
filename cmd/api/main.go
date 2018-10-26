@@ -22,5 +22,5 @@ func main() {
 
 	fmt.Println(model.Get())
 	router := router.NewRouter()
-	log.Fatal(http.ListenAndServe("localhost:3000", setGlobalMiddleware(router)))
+	log.Fatal(http.ListenAndServe("0.0.0.0:3000", setGlobalMiddleware(router)))
 }
