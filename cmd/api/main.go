@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	model "github.com/marciomansur/bookshelf-api/models"
-	"github.com/marciomansur/bookshelf-api/router"
+	model "github.com/marciomansur/microservices-demo/bookshelf-api/internal/models"
+	"github.com/marciomansur/microservices-demo/bookshelf-api/pkg/router"
 	"github.com/rs/cors"
 )
 
@@ -22,5 +22,6 @@ func main() {
 
 	fmt.Println(model.Get())
 	router := router.NewRouter()
+	log.Print("Starting server at 0.0.0.0:3000")
 	log.Fatal(http.ListenAndServe("0.0.0.0:3000", setGlobalMiddleware(router)))
 }
